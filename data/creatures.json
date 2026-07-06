@@ -1,0 +1,15 @@
+{
+  "source": {
+    "project": "ARK Smart Breeding / ARKStatsExtractor",
+    "url": "https://github.com/cadon/ARKStatsExtractor/blob/master/ARKBreedingStats/json/values/values.json",
+    "adaptedOn": "2026-07-06",
+    "notes": "MVP subset adapted from species entries in values.json. fullStatsRaw stat indexes used: 0 health, 1 stamina, 3 oxygen, 4 food, 7 weight, 8 melee. For each stat, baseValue is fullStatsRaw[index][0] and wildIncrement is fullStatsRaw[index][1]. Breeding incubationSeconds, gestationSeconds, and maturationSeconds are mapped from incubationTime, gestationTime, and maturationTime. Base non-mission/non-gauntlet variants were selected where available; otherwise the standard species values shared by variants were used."
+  },
+  "creatures": [
+    {"id":"rex","name":"Rex","tameable":true,"breedable":true,"stats":{"health":{"baseValue":1100,"wildIncrement":0.2},"stamina":{"baseValue":420,"wildIncrement":0.1},"oxygen":{"baseValue":150,"wildIncrement":0.1},"food":{"baseValue":3000,"wildIncrement":0.1},"weight":{"baseValue":500,"wildIncrement":0.02},"melee":{"baseValue":1,"wildIncrement":0.05}},"breeding":{"incubationSeconds":17998.5601,"gestationSeconds":0,"maturationSeconds":333333.333}},
+    {"id":"argentavis","name":"Argentavis","tameable":true,"breedable":true,"stats":{"health":{"baseValue":365,"wildIncrement":0.2},"stamina":{"baseValue":400,"wildIncrement":0.05},"oxygen":{"baseValue":150,"wildIncrement":0.1},"food":{"baseValue":2000,"wildIncrement":0.1},"weight":{"baseValue":400,"wildIncrement":0.02},"melee":{"baseValue":1,"wildIncrement":0.05}},"breeding":{"incubationSeconds":10587.3883,"gestationSeconds":0,"maturationSeconds":196078.431}},
+    {"id":"therizinosaur","name":"Therizinosaur","tameable":true,"breedable":true,"stats":{"health":{"baseValue":870,"wildIncrement":0.2},"stamina":{"baseValue":300,"wildIncrement":0.1},"oxygen":{"baseValue":150,"wildIncrement":0.1},"food":{"baseValue":3000,"wildIncrement":0.1},"weight":{"baseValue":365,"wildIncrement":0.02},"melee":{"baseValue":1,"wildIncrement":0.05}},"breeding":{"incubationSeconds":5999.52004,"gestationSeconds":0,"maturationSeconds":416666.667}},
+    {"id":"giganotosaurus","name":"Giganotosaurus","tameable":true,"breedable":true,"stats":{"health":{"baseValue":80000,"wildIncrement":0.0005},"stamina":{"baseValue":400,"wildIncrement":0.0005},"oxygen":{"baseValue":150,"wildIncrement":0.0025},"food":{"baseValue":4000,"wildIncrement":0.0025},"weight":{"baseValue":700,"wildIncrement":0.01},"melee":{"baseValue":1,"wildIncrement":0.05}},"breeding":{"incubationSeconds":179985.601,"gestationSeconds":0,"maturationSeconds":878348.704}},
+    {"id":"ankylosaurus","name":"Ankylosaurus","tameable":true,"breedable":true,"stats":{"health":{"baseValue":700,"wildIncrement":0.2},"stamina":{"baseValue":175,"wildIncrement":0.1},"oxygen":{"baseValue":150,"wildIncrement":0.1},"food":{"baseValue":3000,"wildIncrement":0.1},"weight":{"baseValue":250,"wildIncrement":0.02},"melee":{"baseValue":1,"wildIncrement":0.05}},"breeding":{"incubationSeconds":9472.92638,"gestationSeconds":0,"maturationSeconds":175438.596}}
+  ]
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARK ASA Breeding & Stat Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">Static GitHub Pages MVP</p>
+    <h1>ARK Survival Ascended Breeding & Stat Calculator</h1>
+    <p>Plan inherited stats, detect likely mutations, and estimate breeding timers entirely in your browser.</p>
+  </header>
+  <main class="shell">
+    <section class="card setup">
+      <div>
+        <label for="creatureSelect">Creature</label>
+        <select id="creatureSelect"></select>
+        <p id="creatureMeta" class="muted">Loading creature data…</p>
+      </div>
+      <div class="settings-grid">
+        <label>Wild stat multiplier<input id="wildMultiplier" type="number" step="0.01" min="0" value="1"></label>
+        <label>Tamed stat multiplier<input id="tamedMultiplier" type="number" step="0.01" min="0" value="1"></label>
+        <label>Breeding/maturation multiplier<input id="maturationMultiplier" type="number" step="0.01" min="0.01" value="1"></label>
+        <button id="resetSettings" type="button">Reset to official/default</button>
+      </div>
+    </section>
+
+    <nav class="tabs" aria-label="Calculator sections">
+      <button class="tab active" data-tab="stats">Stat Calculator</button>
+      <button class="tab" data-tab="planner">Breeding Planner</button>
+      <button class="tab" data-tab="mutations">Mutation Helper</button>
+      <button class="tab" data-tab="timers">Timers</button>
+    </nav>
+
+    <section id="stats" class="panel active card"><h2>Wild Stat Calculator</h2><div id="wildInputs" class="input-grid"></div><div id="wildResults"></div></section>
+    <section id="planner" class="panel card"><h2>Parent Comparison / Breeding Planner</h2><div class="parents"><div><h3>Male</h3><div id="maleInputs" class="input-grid compact"></div></div><div><h3>Female</h3><div id="femaleInputs" class="input-grid compact"></div></div></div><div id="plannerResults"></div></section>
+    <section id="mutations" class="panel card"><h2>Mutation Helper</h2><p class="muted">Enter baby stat points. A value exactly 2 points above the best parent stat is marked as a likely mutation.</p><div id="babyInputs" class="input-grid"></div><div id="mutationResults"></div></section>
+    <section id="timers" class="panel card"><h2>Breeding Timers</h2><div id="timerResults"></div></section>
+  </main>
+  <footer>Data adapted from ARK Smart Breeding. This fan-made MVP is not affiliated with Studio Wildcard.</footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
